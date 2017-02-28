@@ -37,3 +37,6 @@ SQS is a mission based script. You can implement it into your mission. Clients d
 
 ## Incompatibilities
 None that I know about. Maybe if a script uses the namespace "sqs".
+
+## Example
+Feel free to load the attached sqs_test.miz to see the triggers that need to be set.
