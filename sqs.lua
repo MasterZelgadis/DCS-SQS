@@ -4,7 +4,7 @@
 
 sqs = {} -- DONT REMOVE!
 
-sqs.debuglevel = 0
+sqs.debuglevel = 2
 
 sqs.SoundCoalitionTable = {}
 
