@@ -86,7 +86,7 @@ function sqs.PlaySoundTable()
       trigger.action.outText("SQS Debug: No sound in table", 10)
     end
   end
-  timer.scheduleFunction(sqs.PlaySoundTable, nil, timer.getTime()+2)
+  timer.scheduleFunction(sqs.PlaySoundTable, nil, timer.getTime() + sqs.loopInterval)
 end
 
-timer.scheduleFunction(sqs.PlaySoundTable, nil, timer.getTime()+2)
+timer.scheduleFunction(sqs.PlaySoundTable, nil, timer.getTime() + sqs.loopInterval)
