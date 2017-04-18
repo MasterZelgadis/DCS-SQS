@@ -16,10 +16,17 @@ sqs.loopInterval = 2
 ----------------------------------------------------------------------
 sqs.SoundCoalitionTable = {}
 
+
 -- Functions to call in the mission editor
 function sqs.AddSoundToAll(_soundfile, _duration)
   trigger.action.outText("SQS: Sound to All not implementet...yet.", 10)
 end
+
+-- Second function for call from a radio item
+function sqs.AddSoundToCoalition2(_parameterTable)
+  sqs.AddSoundToCoalition(_parameterTable[1], _parameterTable[2], _parameterTable[3])  
+end
+
 
 function sqs.AddSoundToCoalition(_coalition, _soundfile, _duration)
   local soundCoalition = {side = _coalition, soundFile = _soundfile, endTime = _duration, playing = false}
